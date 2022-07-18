@@ -74,7 +74,7 @@ header{
     max-width: 970px;
 }
 
-ul{
+.secaoProdutos ul{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -86,11 +86,6 @@ li{
     margin-bottom: 50px;
 }
 
-img{
-    max-width: 190px;
-    max-height: 140px;
-}
-
 .image_product{
     max-width: 296px;
     height: 154px;
@@ -98,6 +93,11 @@ img{
     justify-content: center;
     background-color: #F5F5F5;
     margin-bottom: 15px;
+}
+
+.image_product img{
+    max-width: 190px;
+    max-height: 140px;
 }
 
 .content_product{
@@ -111,7 +111,7 @@ img{
 .tag {
     display: inline-flex;
     justify-content: center;
-    background-color: #37268C;
+    background-color: #2E245E;
     color: #FFFFFF;
     max-width: 60px;
     font-weight: 400;
@@ -159,4 +159,65 @@ img{
 .carrinho{
     margin-left: 45px;
     max-width: 350px;
+}
+
+form{
+    display: inline-flex;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+form input{
+    padding-left: 14px;
+    width: 246px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #242424;
+    background-color: #F5F5F5;
+    border: none;
+}
+
+form  input:focus {
+    outline: 0;
+}
+
+form button{
+    background-color: #37268C;
+    width: 96px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #b16ec4;
+}
+
+.titulo_carrinho {
+    width: 347px;
+    height: 50px;
+    background-color: #37268C;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrinho ul{
+    max-width: 345px;
+    height: 329px;
+    overflow-y: scroll;
+}
+
+.carrinho ul li{
+    display: flex;
+    max-width: 284px;
 }
