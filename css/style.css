@@ -80,10 +80,14 @@ header{
     flex-wrap: wrap;
 }
 
-li{
+.secaoProdutos ul li{
     max-width: 296px;
     margin: 0px 10px 0px 10px;
     margin-bottom: 50px;
+}
+
+.secaoProdutos ul li:hover{
+    opacity: 0.8;
 }
 
 .image_product{
@@ -150,7 +154,7 @@ li{
 }
 
 .content_product button:hover{
-    background-color: #6656b7;
+    background-color: #0d0041;
     color: #FFFFFF;
     border-radius: 10px;
     max-width: 150px;
@@ -211,13 +215,105 @@ form button:hover{
     justify-content: center;
 }
 
-.carrinho ul{
+.carrinho .carrinho_info ul{
     max-width: 345px;
     height: 329px;
     overflow-y: scroll;
 }
 
-.carrinho ul li{
+.carrinho .carrinho_info ul li{
+    margin-top: 28px;
     display: flex;
     max-width: 284px;
+    margin-bottom: 30px;
+    gap: 18px;
+}
+
+.carrinho_info ul li button{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 300px;
+}
+
+.carrinho_info ul li button:hover{
+    background-color: red;
+}
+
+.carrinho_info ul li .image_product{
+    max-height: 92px;
+    max-width: 88px;
+    display: flex;
+    align-items: center;
+}
+
+.carrinho_info ul li .image_product img{
+    max-height: 67px;
+    max-width: 88px;
+}
+
+.carrinho_info ul li .content_product{
+    gap: 14px;
+    max-width: 176px;
+    padding-left: 16px;
+}
+
+.carrinho_info ul li h2{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.carrinho_info ul li .content_product .preco{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2E245E;;
+}
+
+.carrinho .detalhes_carrinho ul{
+    display: flex;
+    flex-direction: column;
+    background-color: #292929;
+    max-width: 345px;
+    max-height: 126px;
+}
+
+.carrinho .detalhes_carrinho ul li{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #292929;
+    max-width: 345px;
+    height: 30px;
+}
+
+.carrinho .detalhes_carrinho ul li p{
+    color: #FFFFFF;
+    background-color: #292929;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.quantidade{
+    padding-top: 28px;
+}
+
+#carrinhoVazio{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    color: #292929;
+    margin: 82px 95px 10px 95px;
+}
+
+#AdicioneItens{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #242424;
+    margin-left: 121px;
+    margin-right: 128px;
 }
