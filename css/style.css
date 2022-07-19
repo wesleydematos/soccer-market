@@ -302,11 +302,12 @@ form button:hover{
 }
 
 #carrinhoVazio{
+    display: inline-block;
     font-weight: 700;
     font-size: 22px;
     line-height: 24px;
     color: #292929;
-    margin: 82px 95px 10px 95px;
+    margin: 82px 0px 10px 95px;
 }
 
 #AdicioneItens{
@@ -315,5 +316,4 @@ form button:hover{
     line-height: 16px;
     color: #242424;
     margin-left: 121px;
-    margin-right: 128px;
 }
