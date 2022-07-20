@@ -71,12 +71,12 @@ header{
 }
 
 .secaoProdutos{
-    max-width: 970px;
+    width: 970px;
 }
 
 .secaoProdutos ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -166,7 +166,7 @@ header{
 
 .carrinho{
     margin-left: 45px;
-    max-width: 350px;
+    width: 350px;
 }
 
 form{
@@ -261,6 +261,7 @@ form button:hover{
     gap: 14px;
     max-width: 176px;
     padding-left: 16px;
+    padding-right: 10px;
 }
 
 .carrinho_info ul li h2{
@@ -276,25 +277,7 @@ form button:hover{
     color: #2E245E;;
 }
 
-.carrinho .detalhes_carrinho ul{
-    display: flex;
-    flex-direction: column;
-    background-color: #292929;
-    max-width: 345px;
-    max-height: 126px;
-}
-
-.carrinho .detalhes_carrinho ul li{
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #292929;
-    max-width: 345px;
-    height: 30px;
-}
-
-.carrinho .detalhes_carrinho ul li p{
+.detalhes_carrinho p{
     color: #FFFFFF;
     background-color: #292929;
     font-weight: 600;
@@ -302,8 +285,32 @@ form button:hover{
     line-height: 24px;
 }
 
-.quantidade{
-    padding-top: 28px;
+.carrinho .detalhes_carrinho ul{
+    display: flex;
+    flex-direction: column;
+    max-width: 345px;
+    max-height: 126px;
+}
+
+.carrinho .detalhes_carrinho ul li{
+    padding: 0px 5px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    background-color: #292929;
+}
+
+.detalhes_carrinho button{
+    color: #242424;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: inline-flex;
+    justify-content: baseline;
+    border: 1px solid transparent;
+    cursor: pointer;
 }
 
 #carrinhoVazio{
