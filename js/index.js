@@ -69,6 +69,7 @@ function criarCardProdutoCarrinho(produto){
     let img             = produto.img
     let nome            = produto.nameItem
     let valor           = produto.value
+    let index           = produto.index
   
     let tagLi           = document.createElement("li")
     let tagDivImg       = document.createElement("div")
@@ -89,6 +90,8 @@ function criarCardProdutoCarrinho(produto){
     tagSpanPreco.innerText = `R$ ${valor},00`
     tagBtnComprar.type = "button"
     tagBtnComprar.innerText = "Remover do Carrinho"
+    tagBtnComprar.id = index
+
   
     tagDivImg.appendChild(tagImg)
     tagDivContent.append(tagH2Nome, tagSpanPreco, tagBtnComprar)
@@ -127,24 +130,30 @@ function adicionarCarrinho(produto){
     if(produto !== undefined){
         carrinhoCompras.push(produto)
 
+        for(let i = 0; i < carrinhoCompras.length; i++){
+            let indexArr = carrinhoCompras[i]
+            indexArr.index = i
+        }
         listarProdutos(carrinhoCompras, ulCarrinho)
     }
  
 }
 
+
 function removerProduto(event){
     let btnRemover = event.target
 
     if(btnRemover.tagName == "BUTTON"){
-        for(let i = 0; i < carrinhoCompras.length; i++){
-            btnRemover.id = `${i}`
-        }
-       
         let index = btnRemover.id
-        console.log(index)
-        
+
         carrinhoCompras.splice(index, 1)
         carrinhoCompras.innerText = ""
+
+        for(let i = 0; i < carrinhoCompras.length; i++){
+            let produtos = carrinhoCompras[i]
+            produtos.index = i
+        }
+
         listarProdutos(carrinhoCompras, ulCarrinho)
         calcularTotal(carrinhoCompras)
     }

@@ -10,7 +10,6 @@ const data = [
     value: 250,
     addCart: "Adicionar ao carrinho",
     tag: ["Camisas"],
-    remove: "false",
   },
   {
     id: 2,
@@ -21,7 +20,6 @@ const data = [
     value: 200,
     addCart: "Adicionar ao carrinho",
     tag: ["Camisas"],
-    remove: "false",
   },
   {
     id: 3,
@@ -32,7 +30,6 @@ const data = [
     value: 200,
     addCart: "Adicionar ao carrinho",
     tag: ["Camisas"],
-    remove: "false",
   },
   {
     id: 4,
@@ -43,7 +40,6 @@ const data = [
     value: 150,
     addCart: "Adicionar ao carrinho",
     tag: ["Shorts"],
-    remove: "false",
   },
   {
     id: 5,
@@ -54,7 +50,6 @@ const data = [
     value: 150,
     addCart: "Adicionar ao carrinho",
     tag: ["Shorts"],
-    remove: "false",
   },
   {
     id: 6,
@@ -65,7 +60,6 @@ const data = [
     value: 100,
     addCart: "Adicionar ao carrinho",
     tag: ["Shorts"],
-    remove: "false",
   },
   {
     id: 7,
@@ -76,7 +70,6 @@ const data = [
     value: 270,
     addCart: "Adicionar ao carrinho",
     tag: ["Chuteiras"],
-    remove: "false",
   },
   {
     id: 8,
@@ -87,7 +80,6 @@ const data = [
     value: 300,
     addCart: "Adicionar ao carrinho",
     tag: ["Chuteiras"],
-    remove: "false",
   },
   {
     id: 9,
@@ -98,6 +90,5 @@ const data = [
     value: 350,
     addCart: "Adicionar ao carrinho",
     tag: ["Chuteiras"],
-    remove: "false",
   },
 ];
