@@ -195,7 +195,7 @@ inputBusca.addEventListener("keyup", function(event){
         let resultadoBusca  = busca(pesquisaUsuario)
 
         listarProdutos(resultadoBusca, ulProdutos)
-
+        event.preventDefault()
     }
 })
 

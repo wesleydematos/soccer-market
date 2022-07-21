@@ -1,12 +1,19 @@
-/* let  = document.querySelector("")
-finalizarCompra.addEventListener("click", function(){})
+/* let nav = document.querySelector("nav")
+let todos = document.querySelector("#todos")
+let camisas = document.querySelector("#camisas")
+let shorts = document.querySelector("#shorts")
+let chuteiras = document.querySelector("#chuteiras")
 
-let  = document.querySelector("")
-finalizarCompra.addEventListener("click", function(){})
 
-let  = document.querySelector("")
-finalizarCompra.addEventListener("click", function(){})
+finalizarCompra.addEventListener("click", listaCategoria)
 
-let  = document.querySelector("")
-finalizarCompra.addEventListener("click", function(){})
+function listaCategoria(event){
+    let arrCategoria = []
+    
+    let btnCategoria  = event.target
+    
+    if(btnCategoria.tagName == "A"){
+
+    }
+}
  */
