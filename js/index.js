@@ -210,12 +210,10 @@ function busca(valorPesquisa){
         
         let pesquisa    = valorPesquisa.toLowerCase()
         let nomeProduto = data[i].nameItem.toLowerCase()
-        let categoria = data[i].tag[0].toLowerCase()
+        let categoria   = data[i].tag[0].toLowerCase()
         
         if(nomeProduto.includes(pesquisa) || categoria.includes(pesquisa)){
-            
             resultBusca.push(data[i])
-        
         }
     }
 
