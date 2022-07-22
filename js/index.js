@@ -193,9 +193,9 @@ inputBusca.addEventListener("keyup", function(event){
         let pesquisaUsuario = inputBusca.value
 
         let resultadoBusca  = busca(pesquisaUsuario)
-
         listarProdutos(resultadoBusca, ulProdutos)
         event.preventDefault()
+        inputBusca.value = ""
     }
 })
 
@@ -207,13 +207,14 @@ btnBusca.addEventListener("click", function(event){
         let resultadoBusca  = busca(pesquisaUsuario)
 
         listarProdutos(resultadoBusca, ulProdutos)
-
+        inputBusca.value = ""
     }
 })
 
 function busca(valorPesquisa){
     
     let resultBusca = []
+    let resultBusca2 = []
 
     for(let i = 0; i<data.length; i++){
         
@@ -223,8 +224,14 @@ function busca(valorPesquisa){
         
         if(nomeProduto.includes(pesquisa) || categoria.includes(pesquisa)){
             resultBusca.push(data[i])
+        }else if(!nomeProduto.includes(pesquisa) || !categoria.includes(pesquisa)){
+            resultBusca2.push(data[i])
         }
     }
 
-    return resultBusca
+    if(resultBusca.length > 0){
+        return resultBusca
+    } 
+    alert("Busca não encontrada!")
+    return resultBusca2
 }

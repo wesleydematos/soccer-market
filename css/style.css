@@ -91,7 +91,7 @@ header{
 }
 
 .secaoProdutos ul li{
-    width: 296px;
+    max-width: 296px;
     margin: 0px 10px 0px 10px;
     margin-bottom: 50px;
 }
@@ -115,7 +115,7 @@ header{
 
 .content_product{
     background-color: #F5F5F5;
-    width: 296px;
+    max-width: 296px;
     max-height: 254px;
     display: flex;
     flex-direction: column;
